@@ -1,18 +1,18 @@
-package javaInheritanceShop2;
+package javaInheritanceShop;
 
 import java.util.Random;
 
 public class Prodotto {
 	
-	private int codice;	
-	private String nome;
-	private String marca;	
-	private double prezzo;	
-	private static final int Iva = 22;
+	protected int codice;	
+	protected String nome;
+	protected String marca;	
+	protected double prezzo;	
+	protected static final int Iva = 22;
 	
-public Prodotto (String nome, String marca, double prezzo ) {
+    public Prodotto (String nome, String marca, double prezzo ) {
 		
-		this.codice = randomCode();
+		this.setCodice(randomCode());
 		this.nome = nome;
 		this.marca = marca;
 		this.prezzo = prezzo;
@@ -34,7 +34,7 @@ public Prodotto (String nome, String marca, double prezzo ) {
 	}
 	
 	public String nomeEsteso() {
-		return String.format("%08d", codice) + " - " + nome;
+		return String.format("%08d", getCodice()) + " - " + nome;
 	}
 
 	//GETTER E SETTER
@@ -61,6 +61,15 @@ public Prodotto (String nome, String marca, double prezzo ) {
 	public void setPrezzo(double prezzo) {
 		this.prezzo = prezzo;
 	}
-	//GETTER E SETTER/
 
+	public int getCodice() {
+		return codice;
+	}
+
+
+	public void setCodice(int codice) {
+		this.codice = codice;
+	}
+
+	//GETTER E SETTER/
 }
