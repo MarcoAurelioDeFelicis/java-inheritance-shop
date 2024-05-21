@@ -15,7 +15,13 @@ public class Smartphone extends Prodotto {
 		this.memoria = memoria;
 		this.codice = super.codice;
 		
-		
 	}
 	
+	@Override
+	public String toString() {
+		return "Smartphone: " + super.toString() +
+				"- memoria: " + memoria +
+				"- imei: " + IMEI;
+		
+	}
 }

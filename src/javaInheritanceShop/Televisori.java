@@ -14,10 +14,15 @@ public class Televisori extends Prodotto {
 		this.dimensioni = dimensioni;
 		this.smart = smart;
 		this.codice = super.codice;
+		this.smart = false;
 		
 		
 	}
 	
-	
-
+	@Override
+	public String toString() {
+		return "Televisori: " + super.toString() +
+				"- dimensioni: " + dimensioni +
+				"- tipo: " + smart;
+	}
 }

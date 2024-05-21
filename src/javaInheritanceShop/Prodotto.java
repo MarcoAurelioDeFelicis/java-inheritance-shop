@@ -10,9 +10,13 @@ public class Prodotto {
 	protected double prezzo;	
 	protected static final int Iva = 22;
 	
+	public Prodotto () {
+		
+	}
+	
     public Prodotto (String nome, String marca, double prezzo ) {
 		
-		this.setCodice(randomCode());
+		this.codice = randomCode();
 		this.nome = nome;
 		this.marca = marca;
 		this.prezzo = prezzo;
@@ -30,11 +34,11 @@ public class Prodotto {
 	}
 	
 	public double prezzoConIva() {
-		return prezzo + (this.prezzo * Iva /100);
+		return this.prezzo + (this.prezzo * Iva /100);
 	}
 	
 	public String nomeEsteso() {
-		return String.format("%08d", getCodice()) + " - " + nome;
+		return String.format("%08d", getCodice()) + " - " + this.nome;
 	}
 
 	//GETTER E SETTER
@@ -72,4 +76,14 @@ public class Prodotto {
 	}
 
 	//GETTER E SETTER/
+	
+	@Override
+	public String toString () {
+		return "\n" + "Codice Prodotto: " + String.format("%08d", codice) + "\n" +
+			"Nome: " + nome + "\n" +
+			"Marca: " + marca + "\n" +
+			"Prezzo: $ " + String.format("%.2f" , prezzoBase()) + "\n" +
+			"Prezzo + Iva: $ " + String.format("%.2f" , prezzoConIva());			
+				
+	}
 }
