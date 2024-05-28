@@ -74,6 +74,10 @@ public class Prodotto {
 	public void setCodice(int codice) {
 		this.codice = codice;
 	}
+	
+	public static int getIva() {
+		return Iva;
+	}
 
 	//GETTER E SETTER/
 	

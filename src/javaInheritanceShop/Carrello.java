@@ -67,6 +67,7 @@ public class Carrello {
 			return;
 			
 		}
+		
 			//STAMPA PRODOTTO COSTRUITO DALL'UTENTE NEL CARRELLO
 			System.out.println("\n"+ "il Prodotto : " + prodotto + "è stato inserito nel carrello");
 			
