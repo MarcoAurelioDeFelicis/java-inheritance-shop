@@ -20,7 +20,7 @@ public class Cuffie extends Prodotto {
 	@Override
 	public String toString() {
 		return "Cuffie: " + super.toString() +
-				"- colore: " + colore +
-				"- tipo: " + tipo;
+				" - colore: " + colore +
+				" - tipo: " + tipo;
 	}
 }

@@ -21,6 +21,7 @@ public class Carrello {
 		String marca = scan.nextLine();
 		
 		System.out.println("inserire prezzo Prodotto : ");
+		
 		String prezzoString = scan.nextLine();
 		double prezzo = Double.parseDouble(prezzoString);
 

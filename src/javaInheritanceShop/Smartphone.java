@@ -20,8 +20,8 @@ public class Smartphone extends Prodotto {
 	@Override
 	public String toString() {
 		return "Smartphone: " + super.toString() +
-				"- memoria: " + memoria +
-				"- imei: " + IMEI;
+				" - memoria: " + memoria +
+				" - imei: " + IMEI;
 		
 	}
 }

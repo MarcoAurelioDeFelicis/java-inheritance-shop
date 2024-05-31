@@ -22,7 +22,7 @@ public class Televisori extends Prodotto {
 	@Override
 	public String toString() {
 		return "Televisori: " + super.toString() +
-				"- dimensioni: " + dimensioni +
-				"- tipo: " + smart;
+				" - dimensioni: " + dimensioni +
+				" - tipo: " + smart;
 	}
 }
